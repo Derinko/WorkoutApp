@@ -9,26 +9,28 @@ main{
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #1d1b1b;
 }
 header{
     display: inline-block;
-    width: 100%;
+    width: 99%;
     height: 25%;
-    border: 1px solid;
+    border: 1px solid #ffffff;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
-    background-color: blue;
+    background-color:#EC4D37;
 }
 .routine{
     display:flex;
     flex-flow: column;
     align-items: center;
     padding-top: 5%;
+    padding-bottom: 5%;
     gap: 15px;
     width: 90%;
-    height: 42rem;
+    height: auto;
     margin-top: 10%;
-    border: 1px solid;
+    border: 1px solid #ffffff;
     border-radius: 35px;
     margin-left: 5%;
 
@@ -37,7 +39,7 @@ header{
     display: grid;
     grid-template-rows: 80% 20%;
     grid-template-columns: 70% 30%;
-    border: 1px solid;
+    border: 1px solid #ffffff;
     width: 90%;
     height: 10rem;
     border-radius: 25px;
@@ -60,4 +62,42 @@ header{
     width: 100%;
     padding-left: 25px;
     grid-column: 1/1;
+}
+.start >a{
+    background-color: transparent;
+    border-radius: 50px;
+    width: 5rem;
+    height: 1.5rem;
+}
+.start >button{
+    background-color: transparent;
+    border-radius: 50px;
+    width: 5rem;
+    height: 1.5rem;
+}
+.img{
+    grid-row: 1/-1;
+    grid-column: 2/2;
+    width:90%;
+    height: 80%;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.Strenght{
+    background-color:#EC4D37;
+}
+.Muscle{
+    background-color: #A73C2E;
+}
+.Conditioning{
+    background-color: #622C24;
+}
+footer{
+    display: inline-flex;
+    width: 99%;
+    height: 10%;
+    border: 1px solid #ffffff;
+    position: fixed;
+    bottom: 0;
+    background-color:#1d1b1b;
 }

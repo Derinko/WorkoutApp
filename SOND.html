@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/routine.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+      <header>
+          <h1>SOND</h1>
+      </header>
+        <section class="Routine">
+            <section class="week">
+
+                <button type="button" class="collapsible">Week 1</button>
+                <div class="content">
+                    <div class="Days">
+                       <a href="sondUpper1.html"> <h1>Upper 1</h1> </a>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Upper 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Arms</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="week">
+                <button type="button" class="collapsible">Week 2</button>
+                <div class="content">
+                    <div class="Days">
+                        <h1>Upper 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Upper 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Arms</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="week">
+                <button type="button" class="collapsible">Week 3</button>
+                <div class="content">
+                    <div class="Days">
+                        <h1>Upper 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Upper 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Arms</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="week">
+                <button type="button" class="collapsible">Week 4</button>
+                <div class="content">
+                    <div class="Days">
+                        <h1>Upper 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 1</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Upper 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Lower 2</h1>
+                    </div>
+                    <div class="Days">
+                        <h1>Arms</h1>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer>
+
+        </footer>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

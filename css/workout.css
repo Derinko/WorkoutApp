@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    color: #eee;
+}
+main{
+    display: inline-block;
+    width: 100% ;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1b1b;
+}
+header{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 11px;
+}
+header >h2{
+  margin: 0;
+}
+.routine{
+  grid-column: 1/1;
+  width: 100%;
+}
+.lift{
+  grid-column: 2/2;
+  width: 100%;
+}
+.collapsible {
+    background-color: #1d1b1b;
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid   #eee;
+    border-radius: 20px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 3%;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #EC4D37;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+      display: grid;
+      grid-template-rows: 20% 80%;
+      gap: 10px;
+    padding: 0 18px;
+  background-color: #1d1b1b;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+    
+  }
+  .info{
+    display: flex;
+    grid-row: 1/1;
+    flex-flow: row;
+    align-content: space-between;
+    width: 100%;
+    gap: 10%;
+    border-bottom: 1px solid #ffffff;
+  }
+  .info >h3{
+    font-size: 20px;
+  }
+  .exercise{
+    grid-row: 2/2;
+    display: flex;
+    flex-flow: column;
+  }
+  .set{
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    width: 100%;
+    gap: 13%;
+  }
+input{
+  width: 30px;
+  height: 30px;
+  margin-top: 18px;
+  border-radius: 50px;
+}
+.End{
+  width: 99%;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
+}
+.End> button{
+  background-color:transparent;
+  color: #ffffff;
+  border-radius: 30px;
+  width: 5rem;
+  height: 2rem;
+  
+}
