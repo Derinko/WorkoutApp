@@ -14,9 +14,9 @@ main{
 
 }
 header{
-    
+    margin: 0;
     padding-left: 10%;
-    width: 99%;
+    width: 85%;
     height: 25%;
     color: #000000;
 }
@@ -36,7 +36,6 @@ header{
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 5%;
-    padding-left: 3%;
     width: 90%;
     height: auto;
     margin-top: 10%;
@@ -79,46 +78,7 @@ header{
     padding-top: 10%;
     font-size: 18px;
 }
-#Work{
-    display: grid;
-    grid-template-rows: 80% 20%;
-    grid-template-columns: 70% 30%;
-    border: 1px solid #ffffff;
-    width: 90%;
-    height: 10rem;
-    border-radius: 25px;
-}
-.Info{
-    grid-row: 1/1;
-    grid-column: 1/1;
-    width: 100%;
-    padding-left: 25px;
-    padding-top: 10px;
-}
-.Info >h2{
-    margin: 0;
-}
-.Info >h3{
-    margin: 0;
-}
-.start{
-    grid-row: 2/2;
-    width: 100%;
-    padding-left: 25px;
-    grid-column: 1/1;
-}
-.start >a >button{
-    background-color: transparent;
-    border-radius: 50px;
-    width: 5rem;
-    height: 1.5rem;
-}
-.start >button{
-    background-color: transparent;
-    border-radius: 50px;
-    width: 5rem;
-    height: 1.5rem;
-}
+
 .img{
     grid-row: 1/-1;
     grid-column: 2/2;
