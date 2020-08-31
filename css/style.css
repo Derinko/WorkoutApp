@@ -10,7 +10,8 @@ main{
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: #1d1b1b;
+    background-color: #ffffff;
+
 }
 header{
     display: grid;
@@ -35,8 +36,9 @@ header{
     grid-row: 2/2;
 }
 .routine{
-    display:flex;
-    flex-flow: column;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: ;
     align-items: center;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -49,6 +51,49 @@ header{
     border-radius: 35px;
     margin-left: 5%;
 
+}
+.TrainingSTrenght{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 9rem;
+    height: 15rem;
+
+    background-color: #14080E;
+}
+.TrainingMuscle{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    margin-top: 55px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 9rem;
+    height: 15rem;
+    background-color: #083D77;
+}
+.TrainingConditioning{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    margin-top: 55px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 9rem;
+    height: 15rem;
+    background-color: #256D1B;
+}
+.imgCat{
+    width: 100%;
+    grid-row: 1/1;
+    height: 110%;
+    border-radius: 20px;
+}
+.category{
+    grid-row: 2/2;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 10%;
+    font-size: 18px;
 }
 #Work{
     display: grid;
