@@ -7,39 +7,58 @@ main{
     color: #ffffff;
     display: inline-block;
     width: 100% ;
-    height: auto;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #1d1b1b;
 }
+.NAME{
+    width: 95%;
+    height: auto;
+    background-color:#EC4D37;
+    display: grid;
+    padding-left: 5%;
+    
+    
+}
 header{
     width: 100%;
-    height: 20%;
-    border: 1px solid #ffffff;
+    height: auto;
+    margin-top: 5%;
+    text-align: center;
 }
 header>img{
     width: 10rem;
     height: 10rem;
     border-radius: 90px;
 }
-section{
+.stats{
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    height: 70%;
-    gap: 10%;
+    height: auto;
+    gap: 1%;
 
 }
 .rm{
+    font-size: 20px;
     width: 100%;
     grid-row: 1/1;
-    text-align:center;
+    text-align: center !important;
 }
 .sbd{
+    font-size: 20px;
     display: flex;
     width: 100%;
     grid-row: 2/2;
-    flex-flow: column;
+    gap: 10%;
+    flex-flow: row;
+    justify-content: center;
+}
+.total{
+    font-size: 20px;
+    grid-row: 3/3;
+    text-align:center;
 }
 footer{
     display: inline-flex;
