@@ -97,7 +97,7 @@ footer{
     display: inline-flex;
     flex-wrap: wrap;
     align-content: space-around;
-    gap: 25%;
+    gap: 12%;
     padding-left: 5%;
     width: 94%;
     height: 10%;
@@ -106,7 +106,30 @@ footer{
     bottom: 0;
     background-color:#1d1b1b;
 }
-footer>img{
+.Home{
+    text-align: center;
+    width: 5rem;
+}
+.Articles{
+    text-align: center;
+    width: 5rem;
+}
+.User{
+    text-align: center;
+    width: 5rem;
+}
+.Home>img{
     width: 3rem;
     height: 3rem;
+}
+.Articles>img{
+    width: 3rem;
+    height: 3rem;
+}
+.User>img{
+    width: 3rem;
+    height: 3rem;
+}
+.active{
+    background-color:#EC4D37;
 }

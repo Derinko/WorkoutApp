@@ -61,10 +61,45 @@ header{
   }
   footer{
     display: inline-flex;
-    width: 99%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 12%;
+    padding-left: 5%;
+    width: 94%;
     height: 10%;
     border: 1px solid #ffffff;
     position: fixed;
     bottom: 0;
     background-color:#1d1b1b;
+}
+.Home >a >img{
+    text-align: center;
+    width: 3rem;
+}
+
+.Articles >a >img{
+    text-align: center;
+    width: 3rem;
+}{
+    text-align: center;
+    width: 5rem;
+}
+.User >a >img{
+    text-align: center;
+    width: 3rem;
+}{
+    text-align: center;
+    width: 5rem;
+}
+
+.Articles>img{
+    width: 3rem;
+    height: 3rem;
+}
+.User>img{
+    width: 3rem;
+    height: 3rem;
+}
+.active{
+    background-color:#EC4D37;
 }
