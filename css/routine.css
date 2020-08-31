@@ -59,7 +59,8 @@ header{
       margin-top: 15px;
       margin-bottom: 15px;
   }
-  footer{
+
+footer{
     display: inline-flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -72,27 +73,32 @@ header{
     bottom: 0;
     background-color:#1d1b1b;
 }
-.Home >a >img{
+.Home{
     text-align: center;
-    width: 4rem;
+    width: 5rem;
 }
-
-.Articles >a >img{
+.Articles{
     text-align: center;
-    width: 4rem;
+    width: 5rem;
 }
-.User >a >img{
+.User{
     text-align: center;
-    width: 3rem;
+    width: 5rem;
 }
-
-.Articles>img{
-    width: 3rem;
+.Home>a >img{
+    text-align: center;
     height: 3rem;
-}
-.User>img{
     width: 3rem;
+}
+.Articles>a >img{
+    text-align: center;
     height: 3rem;
+    width: 3rem;
+}
+.User>a >img{
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
 }
 .active{
     background-color:#EC4D37;
