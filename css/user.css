@@ -17,6 +17,11 @@ header{
     height: 20%;
     border: 1px solid #ffffff;
 }
+header>img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 90px;
+}
 section{
     display: grid;
     grid-template-rows: 20% 80%;
