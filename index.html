@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>DK Workout</title>
 </head>
+
 <body>
     <main>
         <header>
             <div class="greetings">
-            <h1>Hola,Derick</h1>
-        </div>
+                <h1>Hola,Derick</h1>
+            </div>
             <div class="rm">
-            <h2>S:220</h2>
-            <h2>B:210</h2>
-            <h2>D:350</h2>
-        </div>
+                <h2 id="squat">S:</h2>
+                <h2 id="bench">B:</h2>
+                <h2 id="deadlift">D:</h2>
+            </div>
         </header>
         <div class="routine">
             <section id="Work" class="Strenght">
@@ -42,7 +44,7 @@
                     <h3>Difficult: Medium</h3>
                 </div>
                 <div class="start">
-                 <button>Start</button>
+                    <button>Start</button>
                 </div>
                 <div class="img">
                     <img src="css/Bodyb.svg" alt="">
@@ -64,16 +66,25 @@
             </section>
         </div>
         <footer>
-            <div class="Home active" >
+            <div class="Home active">
                 <a href="index.html"><img src="IMG/home.svg" alt=""></a>
             </div>
             <div class="Articles">
-           <a href=""> <img src="IMG/newsfeed.svg" alt=""></a>
-        </div>
-        <div class="User">
-           <a href="user.html"> <img src="IMG/user.svg" alt=""> </a>
-        </div>
+                <a href=""> <img src="IMG/newsfeed.svg" alt=""></a>
+            </div>
+            <div class="User">
+                <a href="user.html"> <img src="IMG/user.svg" alt=""> </a>
+            </div>
         </footer>
+        <script>
+            var squat1rm = 220;
+            var bench1rm = 210;
+            var deadlift1rm = 350;
+            document.getElementById('squat').innerHTML = "S: "+ squat1rm;
+            document.getElementById('bench').innerHTML = "B: "+ bench1rm;
+            document.getElementById('deadlift').innerHTML= "D: " + deadlift1rm
+        </script>
     </main>
 </body>
+
 </html>

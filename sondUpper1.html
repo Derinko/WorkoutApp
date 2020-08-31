@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>Upper 1</title>
 </head>
+
 <body>
     <main>
         <header>
             <div class="routine">
-            <h2> Week 1</h2>
-            <h2> Upper 1</h2>
-            <h2> Rest</h2>
-            <h2> Timer</h2>
-        </div>
-        <div class="lift">
-            <img src="" alt="">
-        </div>
+                <h2> Week 1</h2>
+                <h2> Upper 1</h2>
+                <h2> Rest</h2>
+                <h2> Timer</h2>
+            </div>
+            <div class="lift">
+                <img src="" alt="">
+            </div>
         </header>
         <section>
             <button type="button" class="collapsible">Bench Press 80%</button>
@@ -33,25 +35,25 @@
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>5</h2>
-                        <h2>160</h2>
+                        <h2 id="80"></h2>
                         <h2>7.5</h2>
                     </div>
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>5</h2>
-                        <h2>160</h2>
+                        <h2 id="80"></h2>
                         <h2>7.5</h2>
                     </div>
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>5</h2>
-                        <h2>160</h2>
+                        <h2 id="80"></h2>
                         <h2>7.5</h2>
                     </div>
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>5</h2>
-                        <h2>160</h2>
+                        <h2 id="80"></h2>
                         <h2>7.5</h2>
                     </div>
                 </div>
@@ -70,18 +72,18 @@
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>3</h2>
-                        <h2>175</h2>
+                        <h2 id="85"></h2>
                         <h2>9</h2>
                     </div>
                     <div class="set">
                         <input type="checkbox" name="1" id="">
                         <h2>3</h2>
-                        <h2>175</h2>
+                        <h2 id="85"></h2>
                         <h2>9</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -119,8 +121,8 @@
                         <h2>8</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -158,8 +160,8 @@
                         <h2>7</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -197,8 +199,8 @@
                         <h2>7</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -236,8 +238,8 @@
                         <h2>8</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -275,13 +277,13 @@
                         <h2>7</h2>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="End">
             <h1>End workout</h1>
-             <a href="SOND.html">  <button> Close</button> </a>
+            <a href="SOND.html"> <button> Close</button> </a>
         </section>
     </main>
     <script>
@@ -295,10 +297,22 @@
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                 } else {
-                    content.style.maxHeight = content.scrollHeight +"0" + "px";
+                    content.style.maxHeight = content.scrollHeight + "0" + "px";
                 }
             });
         }
     </script>
+    <script>
+        var bench1rm = 210;
+        var weight1= bench1rm*0.8;
+        var round=Math.floor(weight1 / 5) * 5;
+        document.getElementById('80').innerHTML= round;
+        
+        var weight2= bench1rm*0.85;
+        var round=Math.floor(weight2 / 5) * 5;
+        document.getElementById('85').innerHTML= round;
+        document.getElementById('85').innerHTML= round;
+    </script>
 </body>
+
 </html>

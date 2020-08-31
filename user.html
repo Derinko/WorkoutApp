@@ -19,12 +19,12 @@
             <h1>Lifts 1RM</h1>
         </div>
             <div class="sbd">   
-            <h2>S:</h2>
-            <h2>B:</h2>
-            <h2>D:</h2> 
+                <h2 id="squat">S:</h2>
+                <h2 id="bench">B:</h2>
+                <h2 id="deadlift">D:</h2>
         </div>
         <div class="total">
-            <h2>Total</h2>
+            <h2 id="total">Total</h2>
         </div>
         </section>
         <footer>
@@ -38,6 +38,18 @@
            <a href="user.html"> <img src="IMG/user.svg" alt=""> </a>
         </div>
         </footer>
+        <script>
+            var squat1rm = 220;
+            var bench1rm = 210;
+            var deadlift1rm = 350;
+            var total= squat1rm+ bench1rm+ deadlift1rm;
+            document.getElementById('squat').innerHTML = "S: "+ squat1rm;
+            document.getElementById('bench').innerHTML = "B: "+ bench1rm;
+            document.getElementById('deadlift').innerHTML= "D: " + deadlift1rm;
+            document.getElementById('total').innerHTML= "Total: " + total;
+            
+            
+        </script>
     </main>
 </body>
 </html>

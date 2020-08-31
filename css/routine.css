@@ -20,7 +20,7 @@ header{
 }
 .Routine{
     
-    margin-top: 50%;
+    margin-top: 20%;
 }
 
 .collapsible {
@@ -29,6 +29,7 @@ header{
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    
     border: 1px solid   #eee;;
     text-align: left;
     outline: none;
