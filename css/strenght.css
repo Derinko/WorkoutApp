@@ -62,7 +62,7 @@ footer{
 .TrainingPlan{
     display: grid;
     grid-template-rows: 40% 60%;
-    border: 1px solid;
+   
     grid-column: 2/2;
     border-radius: 50px;
     margin-top: 10px;
