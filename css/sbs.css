@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Alata", sans-serif;
-  color: #1d1b1b;
+  color: #eee;
 }
 
 main {
@@ -37,6 +37,7 @@ header {
   gap: 10px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 100vh;
+  margin-bottom: 25%;
 }
 span {
   height: 10px;
@@ -81,7 +82,8 @@ span {
   gap: 10px;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid black;
+  border: 1px solid #fff;
+  background-color: #1d1b1b;
   width: 89%;
   padding-left: 5%;
   padding-right: 5%;
@@ -91,6 +93,11 @@ span {
   border: 1px solid black;
   height: 60%;
   width: 30%;
+  box-shadow: 5px 10px #000000;
+}
+.days > a {
+  color: inherit;
+  text-decoration: inherit;
 }
 footer {
   display: inline-flex;
