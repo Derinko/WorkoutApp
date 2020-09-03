@@ -12,12 +12,19 @@
 
   <body>
     <main>
-      <header>
+      <header id="header">
         <div class="back"><img src="" alt="" /></div>
         <h2 class="title">Stronger By Science</h2>
         <button type="button" class="collapsible">Info</button>
         <div class="content">
-          adfhaksd
+          Greg Nuckols released 28 program variations through his site, Stronger
+          by Science.This is an recomended template variant by himself. Every
+          program runs on a 4 week cycle, with the lifter testing their 1RM
+          after each cycle. Intermediate and advanced cycles start bringing in
+          variations of the main lift (e.g. programming in a front squat as a
+          variation to the back squat), while the beginner programs stick more
+          closely to the big three lifts in the interest of specificity and
+          learning the movement.
         </div>
       </header>
       <div class="month">
@@ -62,15 +69,18 @@
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
-
+      var head = document.getElementsByClassName("header");
+      var c;
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
           this.classList.toggle("active");
           var content = this.nextElementSibling;
           if (content.style.maxHeight) {
             content.style.maxHeight = null;
+            document.getElementById("header").style.height = "10rem";
           } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.maxHeight = content.scrollHeight + "0" + "px";
+            document.getElementById("header").style.height = "21rem";
           }
         });
       }
