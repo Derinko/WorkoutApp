@@ -14,7 +14,12 @@ main {
   background-color: #ffffff;
 }
 header {
+  background-image: url(sbs.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: grid;
+  color: #eee;
+  height: 10rem;
   grid-template-columns: 20% 80%;
 }
 .back {
@@ -37,8 +42,8 @@ span {
   height: 10px;
 }
 .collapsible {
-  background-color: #eee;
-  color: #1d1b1b;
+  background-color: transparent;
+  color: #eee;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -63,8 +68,9 @@ span {
   grid-template-rows: 20% 80%;
   gap: 10px;
   padding: 0 18px;
-  background-color: #eee;
+  background-color: #1d1b1b;
   max-height: 0;
+
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
