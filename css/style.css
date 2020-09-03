@@ -92,42 +92,45 @@ footer{
     display: inline-flex;
     flex-wrap: wrap;
     align-content: space-around;
-    gap: 12%;
+    gap: 28%;
+    margin-left:15px;
     padding-left: 5%;
-    width: 94%;
-    height: 10%;
+    width: 84%;
+    height: 9%;
     border: 1px solid #ffffff;
+    border-radius: 20px;
     position: fixed;
     bottom: 0;
     background-color:#1d1b1b;
 }
 .Home{
     text-align: center;
-    width: 5rem;
+    width: 2rem;
+    border-radius: 100px;
 }
 .Articles{
     text-align: center;
-    width: 5rem;
+    width: 2.5rem;
 }
 .User{
     text-align: center;
-    width: 5rem;
+    width: 2rem;
 }
 .Home>a >img{
     text-align: center;
-    height: 3rem;
-    width: 3rem;
+    height: 1rem;
+    width: 1rem;
 }
 .Articles>a >img{
     text-align: center;
-    height: 3rem;
-    width: 3rem;
+    height: 1rem;
+    width: 1rem;
 }
 .User>a >img{
     text-align: center;
-    height: 3rem;
-    width: 3rem;
+    height: 1rem;
+    width: 1rem;
 }
 .active{
-    background-color:#EC4D37;
+    background-color:#cec9c8;
 }
