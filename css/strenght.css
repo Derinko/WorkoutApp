@@ -80,6 +80,7 @@ footer{
 }
 .img{
     display: grid;
+    grid-template-rows: 60% 40%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 2/2;
     padding-left: 5%;
@@ -90,8 +91,10 @@ footer{
 }
 .demo1{
     margin-top: 50px;
+    grid-row: 1/-1;
 }
 .demo2{
+    grid-row: 1/-1;
     margin-top: 25px;
 }
 .Home{

@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alata', sans-serif;
+  color: #1d1b1b;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+
+}
+.month{
+  display: grid;
+  gap: 10px;
+  grid-template-rows:1fr 1fr 1fr 1fr ;
+  height: 100vh;
+}
+.week{
+  display: inline-flex;
+  flex-flow: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 100%;
+}
+.days{
+  text-align: center;
+  border: 1px solid black;
+  height: 60%;
+  width: 30%;
+}
+footer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 28%;
+  margin-left: 15px;
+  padding-left: 5%;
+  width: 84%;
+  height: 9%;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  background-color: #1d1b1b;
+}
+
+.Home {
+  text-align: center;
+  width: 2rem;
+  border-radius: 100px;
+}
+
+.Articles {
+  text-align: center;
+  width: 2.5rem;
+}
+
+.User {
+  text-align: center;
+  width: 2rem;
+}
+
+.Home>a>img {
+  text-align: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+.Articles>a>img {
+  text-align: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+.User>a>img {
+  text-align: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+.active {
+  background-color: #cec9c8;
+}
