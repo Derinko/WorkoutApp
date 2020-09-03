@@ -25,6 +25,11 @@ header {
 .back {
   grid-column: 1/1;
 }
+.back > a > img {
+  width: 30px;
+  margin-top: 25px;
+  margin-left: 5%;
+}
 .title {
   grid-column: 2/2;
 }
