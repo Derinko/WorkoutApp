@@ -4,13 +4,19 @@ body{
     font-family: 'Alata', sans-serif;
     color: #ffffff;
 }
+h2{
+    margin:0 ;
+}
+h3{
+    margin:0 ;
+}
 main{
     display: inline-block;
     width: 100% ;
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #091a1f;
 
 }
 footer{
@@ -27,6 +33,66 @@ footer{
     position: fixed;
     bottom: 0;
     background-color:#1d1b1b;
+}
+.head{
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+    height: 13rem;
+    padding-left: 5%;
+    background-image: url(strength.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.head >h2{
+    margin:0 ;
+}
+.a{
+    grid-row: 2/2;
+}
+.b{
+    grid-row: 3/3;
+}
+.plans{
+    display: grid;
+    grid-template-columns: 7% 90% 3%;
+    height: auto;
+    margin-bottom: 25%;
+}
+.TrainingPlan{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    border: 1px solid;
+    grid-column: 2/2;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 18rem;
+    width: 95%;
+    background-color: #fff; 
+    color: #1d1b1b;
+    
+}
+.info{
+    padding-left: 5%;
+    padding-top: 5%;
+    grid-row: 1/1;
+
+}
+.img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 2/2;
+    padding-left: 5%;
+}
+.img >img{
+    width: 4rem;
+    border-radius: 10px;
+}
+.demo1{
+    margin-top: 50px;
+}
+.demo2{
+    margin-top: 25px;
 }
 .Home{
     text-align: center;
