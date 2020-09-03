@@ -1,104 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/SBSWorkout.css" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <div class="timer">
-          <h2>Tiempo</h2>
-        </div>
-        <div class="rest">
-          <h2>Descanso</h2>
-        </div>
-      </header>
 
-          <section class="series">
-            <div class="exercise">
-             
-              <h3>Bench Press</h3>
-            </div>
-            <h3 class="sets">Set 1</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-           <h3 class="sets">Set 2</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-          </section>
-          <section class="series">
-            <div class="exercise">
-             <img src="" alt="">
-              <h3>Deadlift</h3>
-            </div>
-            <h3 class="sets">Set 1</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-           <h3 class="sets">Set 2</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-          </section>
-          <section class="series">
-            <div class="exercise">
-             
-              <h3>Face Pull</h3>
-            </div>
-            <h3 class="sets">Set 1</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-           <h3 class="sets">Set 2</h3>
-           <div class="reps">
-             <h1 class="amount">5</h1>
-             <h3 class="unit">Reps</h3>
-           </div>
-           <h3>*</h3>
-           <div class="weight">
-             <h1 class="amount">40</h1>
-             <h3 class="unit">Kg</h3>
-           </div>
-          </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/SBSWorkout.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body onload="show();">
+  <main>
+    <header>
+      <div class="title">
+        <div class="back">
+          <a href="strenght.html"> <img src="IMG/back.png" alt=""  /> </a>
+        </div>
+        <h2>Week 1 Day 2</h2>
+      </div>
+      <div class="timer"><h2>Time:</h2> <span id="time"></span></div>
+      <div class="rest">
+        <h2>Descanso</h2>
+      </div>
+    </header>
+
+    <section class="series">
+      <div class="exercise">
+
+        <h3>Bench Press</h3>
+      </div>
+      <h3 class="sets">Set 1</h3>
+      <div class="reps">
+        <h1 class="amount">8</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="bench50"></h1>
+        <h3 class="unit">Lb</h3>
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 2</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount bench60"></h1>
+        <h3 class="unit">Lb</h3>
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 3</h3>
+      <div class="reps">
+        <h1 class="amount">4</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount bench70"></h1>
+        <h3 class="unit">Lb</h3>
       
-    </main>
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 4</h3>
+      <div class="reps">
+        <h1 class="amount">4</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount bench70"></h1>
+        <h3 class="unit">Lb</h3>
+      
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 5</h3>
+      <div class="reps">
+        <h1 class="amount">3</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount bench80"></h1>
+        <h3 class="unit">Lb</h3>
+       
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 6</h3>
+      <div class="reps">
+        <h1 class="amount">3</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount bench80"></h1>
+        <h3 class="unit">Lb</h3>
+        
+      </div>
+      <input type="checkbox" class="done" id="">
+    </section>
+    <section class="series">
+      <div class="exercise">
+        <img src="" alt="">
+        <h3>Squat</h3>
+      </div>
+      <h3 class="sets">Set 1</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
+        
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 2</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
 
-    
-  </body>
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 3</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 4</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
+        
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 5</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
+       
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 6</h3>
+      <div class="reps">
+        <h1 class="amount">6</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount squat75"></h1>
+        <h3 class="unit">Lb</h3>
+      
+      </div>
+      <input type="checkbox" class="done" id="">
+    </section>
+    <section class="series">
+      <div class="exercise">
+
+        <h3>Face Pull</h3>
+      </div>
+      <h3 class="sets">Set 1</h3>
+      <div class="reps">
+        <h1 class="amount">10</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount">40</h1>
+        <h3 class="unit">Kg</h3>
+       
+      </div>
+      <input type="checkbox" class="done" id="">
+      <h3 class="sets">Set 2</h3>
+      <div class="reps">
+        <h1 class="amount">5</h1>
+        <h3 class="unit">Reps</h3>
+      </div>
+      <h3>*</h3>
+      <div class="weight">
+        <h1 class="amount" id="peso">40</h1>
+        <h3 class="unit">Kg</h3>
+        
+      </div>
+      <input type="checkbox" class="done" id="">
+    </section>
+
+  </main>
+
+  <script src="js/benchCalc.js">
+  benchCalc()
+  </script>
+  <script src="js/squatCalc.js">
+  squatCalc()</script>
+  <script src="js/stopwatch.js">
+  stopwatch()</script>
+</body>
+
 </html>

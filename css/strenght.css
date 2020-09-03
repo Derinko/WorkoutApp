@@ -10,6 +10,16 @@ h2{
 h3{
     margin:0 ;
 }
+@font-face{ 
+    font-family: 'Open Sans', sans-serif;
+    src: url(fonts/OpenSans-LightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face{
+    font-family:  'Roboto', sans-serif;
+    src: url(fonts/Roboto-Medium.ttf);
+  }
 main{
     display: inline-block;
     width: 100% ;
@@ -49,6 +59,8 @@ footer{
 }
 .a{
     grid-row: 2/2;
+    font-family:'Open Sans', sans-serif;
+    font-weight: lighter;
 }
 .b{
     grid-row: 3/3;
