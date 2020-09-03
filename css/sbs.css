@@ -13,6 +13,20 @@ main {
   padding: 0;
   background-color: #ffffff;
 }
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.back {
+  grid-column: 1/1;
+}
+.title {
+  grid-column: 2/2;
+}
+.content {
+  grid-column: 1/-1;
+}
+
 .month {
   display: grid;
   gap: 10px;
@@ -29,7 +43,7 @@ span {
   padding: 18px;
   width: 100%;
   border: 1px solid #1d1b1b;
-
+  grid-column: 1/-1;
   text-align: left;
   outline: none;
   font-size: 15px;
