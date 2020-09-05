@@ -84,7 +84,28 @@ main {
   position: fixed;
   bottom: 0;
 }
-
+.rest{
+  display: grid;
+  width: 98%;
+  grid-template-columns: 30% 70%;
+  border:1px solid #eee;
+  height: 3rem;
+  position: fixed;
+  padding-right: 5px;
+  bottom: 0;
+}
+.controls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+.controls>button{
+  height: 2rem;
+  background-color: #eee;
+  align-self: center;
+}
 .unit {
   font-family: 'Open Sans', sans-serif !important;
   font-size: small;
