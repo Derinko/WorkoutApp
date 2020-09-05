@@ -77,7 +77,13 @@ main {
   margin-left: 25px;
   margin-bottom: 20px;
 }
-
+.time{
+  display: none ;
+  width: 100%;
+  border: 1px solid;
+  position: fixed;
+  bottom: 0;
+}
 
 .unit {
   font-family: 'Open Sans', sans-serif !important;
