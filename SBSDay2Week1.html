@@ -380,10 +380,13 @@
       <input type="checkbox" class="done" id="">
     </section>
     <div class="rest">
-      <div class="stopwatch"></div>
+      <span id="time-left">00:00</span>
 
-      <div class="controls"> <button id="60sec" onClick="stopwatch.start();"">60 seg</button>
+      <div class="controls"> <button id="start">60 seg</button>
         <button id=" 90sec">90 seg</button><button id="120sec"> 120 seg</button></div>
+    </div>
+    <div id="audio">
+      <audio src="timesup.mp3"></audio>
     </div>
   </main>
 
@@ -393,47 +396,14 @@
   <script src="js/squatCalc.js">
     squatCalc()
   </script>
-  <script src="js/stopwatch.js">
+  <!-- <script src="js/stopwatch.js">
     stopwatch()
-  </script>
+  </script> -->
   <script src="js/rest.js">
-    rest()
+    
   </script>
 </body>
 
-<script>
-  /*window.time = 0; //global declaration
-    function check() {
-        var isChecked = document.getElementById("done")
-        var rest =document.getElementById('rest');
-        if (isChecked.checked == true) {
-          rest.style.display = "block";
-        } else if (isChecked == false) {
-          rest.style.display='none';
-        }
-    }
-  function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#timer');
-    startTimer(fiveMinutes, display);
-};*/
-</script>
 
 </html>
