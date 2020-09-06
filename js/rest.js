@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(function () {
             if (timeleft <= 0) {
                 clearInterval(timeleft = 0)
-                var audio = new Audio('time.mp3');
+                var audio = new Audio('timesup.mp3');
                 
                 setTimeout(function(){
                     audio.play();
                 
                     setTimeout(function(){
                         audio.pause();
-                        audio.currentTime = 0;
+                        audio.currentTime > 6;
                     }, 2000);
                 }, 1000);
             }
