@@ -27,11 +27,11 @@ function squat50() {
   }
   function squat75() {
     var squat1rm = 220;
-    var weight70 = squat1rm * 0.75;
+    var weight75 = squat1rm * 0.75;
     var x, i;
     x = document.querySelectorAll(".squat75");
     for (i = 0; i < x.length; i++) {
-      x[i].innerHTML = weight70;
+      x[i].innerHTML = weight75;
     }
   }
   function squat80() {

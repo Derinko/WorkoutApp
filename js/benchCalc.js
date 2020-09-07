@@ -25,6 +25,15 @@
         x[i].innerHTML = weight70;
       }
     }
+    function bench75() {
+      var bench1rm = 210;
+      var weight75 = bench1rm * 0.75;
+      var x, i;
+      x = document.querySelectorAll(".bench75");
+      for (i = 0; i < x.length; i++) {
+        x[i].innerHTML = weight75;
+      }
+    }
     function bench80() {
       var bench1rm = 210;
       var weight80 = bench1rm * 0.8;
@@ -37,4 +46,5 @@
     bench50()
     bench60()
     bench70()
+    bench75()
     bench80()
